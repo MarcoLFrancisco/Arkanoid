@@ -42,3 +42,14 @@ Files in the approved proposal:
 - src/renderer.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-11 -->
+### Merged change: Connect Arkanoid gameplay, browser controls, and menus
+
+Merged pull request #11: https://github.com/MarcoLFrancisco/Arkanoid/pull/11
+
+Files in the approved proposal:
+- src/main.js
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
