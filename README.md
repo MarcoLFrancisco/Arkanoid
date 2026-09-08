@@ -53,3 +53,14 @@ Files in the approved proposal:
 - src/main.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-13 -->
+### Merged change: Add step-by-step VS Code setup and browser run instructions
+
+Merged pull request #13: https://github.com/MarcoLFrancisco/Arkanoid/pull/13
+
+Files in the approved proposal:
+- README.md
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
