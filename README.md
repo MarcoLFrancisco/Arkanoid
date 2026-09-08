@@ -31,3 +31,14 @@ Files in the approved proposal:
 - src/game.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-9 -->
+### Merged change: Add neon Canvas renderer with particles and responsive resolution
+
+Merged pull request #9: https://github.com/MarcoLFrancisco/Arkanoid/pull/9
+
+Files in the approved proposal:
+- src/renderer.js
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
