@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d20">
+  <meta name="description" content="Neon Arkanoid: a glowing, fast-paced browser brick breaker with keyboard, mouse, and touch controls.">
+  <title>Neon Arkanoid</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <div class="arcade-shell">
+    <header class="masthead">
+      <div class="brand">
+        <p class="eyebrow">The neon arcade</p>
+        <h1>ARK<span>ANOID</span></h1>
+        <p class="tagline">Find your angle. Break the grid.</p>
+      </div>
+      <div class="header-actions">
+        <span class="edition-badge">Canvas edition / 01</span>
+        <button id="pause-button" class="button button-secondary" type="button" aria-controls="game-canvas" aria-pressed="false" disabled>Pause</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="game-panel" aria-label="Arkanoid game">
+        <dl class="hud" aria-label="Game statistics">
+          <div class="hud-stat">
+            <dt>Score</dt>
+            <dd id="score-value">000000</dd>
+          </div>
+          <div class="hud-stat">
+            <dt>Level</dt>
+            <dd id="level-value">01</dd>
+          </div>
+          <div class="hud-stat">
+            <dt>Lives</dt>
+            <dd id="lives-value">3</dd>
+          </div>
+          <div class="hud-stat hud-stat-accent">
+            <dt>Best <span class="stat-note">this session</span></dt>
+            <dd id="best-value">000000</dd>
+          </div>
+        </dl>
+
+        <div id="game-stage" class="game-stage">
+          <canvas id="game-canvas" width="960" height="640" tabindex="0" aria-label="Arkanoid playfield" aria-describedby="controls-summary game-status">
+            This game requires a browser with HTML Canvas and JavaScript support.
+          </canvas>
+
+          <section id="game-overlay" class="game-overlay" aria-labelledby="overlay-title" aria-describedby="overlay-description">
+            <div class="overlay-card">
+              <p id="overlay-kicker" class="eyebrow">Ready, player?</p>
+              <h2 id="overlay-title">LIGHT UP<br>THE GRID.</h2>
+              <p id="overlay-description">Keep the ball alive, shatter every brick, and chase your best score through a neon universe.</p>
+              <div class="overlay-actions">
+                <button id="start-button" class="button button-primary" type="button" disabled>Start game</button>
+                <button id="resume-button" class="button button-primary" type="button" hidden>Resume game</button>
+                <button id="restart-button" class="button button-secondary" type="button" hidden>Play again</button>
+              </div>
+              <p id="overlay-hint" class="overlay-hint">Move with your mouse, touch, or arrow keys.</p>
+            </div>
+          </section>
+        </div>
+
+        <div class="game-toolbar">
+          <p id="game-status" role="status" aria-live="polite" aria-atomic="true">Loading the arcade…</p>
+          <button id="launch-button" class="button button-compact" type="button" aria-controls="game-canvas" disabled>Launch ball</button>
+        </div>
+      </section>
+
+      <aside class="instructions" aria-labelledby="controls-title">
+        <div>
+          <p class="eyebrow">Mission briefing</p>
+          <h2 id="controls-title">Stay sharp. Keep bouncing.</h2>
+          <p>Clear every brick to advance. Aim your rebounds by changing where the ball meets your paddle.</p>
+        </div>
+        <ul id="controls-summary" class="control-list">
+          <li><span class="control-keys"><kbd>←</kbd> <kbd>→</kbd> / <kbd>A</kbd> <kbd>D</kbd></span><span>Move the paddle</span></li>
+          <li><span class="control-keys"><kbd>Space</kbd></span><span>Launch the ball</span></li>
+          <li><span class="control-keys"><kbd>P</kbd> / <kbd>Esc</kbd></span><span>Pause or resume</span></li>
+          <li><span class="control-keys">Mouse / touch</span><span>Move on the playfield; click or tap to launch</span></li>
+        </ul>
+      </aside>
+      <noscript><p class="notice">Enable JavaScript to play Neon Arkanoid.</p></noscript>
+    </main>
+
+    <footer class="site-footer">
+      <span>Pure canvas. Pure arcade.</span>
+      <span>No downloads. Just one more round.</span>
+    </footer>
+  </div>
+</body>
+</html>
