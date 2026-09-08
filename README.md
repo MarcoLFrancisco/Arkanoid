@@ -12,20 +12,49 @@ A neon browser brick-breaker game built with HTML, CSS, JavaScript, and Canvas.
 
 No Node.js, npm installation, build step, or VS Code extension is required.
 
-### 2. Download the game from GitHub
+### 2. Get the game from GitHub: clone or download
+
+Choose either option below. Both require access to GitHub to download the project; playing locally afterward does not require GitHub. Make sure the game changes have been merged into the repository's default branch first.
+
+#### Option A — Clone with Git
+
+Install **Git** from https://git-scm.com/downloads if needed, then reopen your terminal so Git is available.
+
+Open a terminal in the parent folder where you want to store the project, such as your projects folder. Run these commands one at a time:
+
+```sh
+git --version
+git clone https://github.com/MarcoLFrancisco/Arkanoid.git
+cd Arkanoid
+```
+
+Expected result: Git creates an `Arkanoid` folder containing the repository files and checks out its default branch. After `cd Arkanoid`, your terminal is in the project root containing `index.html`.
+
+To open that folder in VS Code, run the following if the VS Code command-line launcher is available:
+
+```sh
+code .
+```
+
+If `code` is not recognized, use **File > Open Folder…** in VS Code and select the new `Arkanoid` folder, as described in step 3. Continue to step 4 to start the local server.
+
+These are standard Git and VS Code commands; they have not been executed in this review environment.
+
+#### Option B — Download ZIP (no Git required)
 
 1. Open https://github.com/MarcoLFrancisco/Arkanoid.
-2. Make sure the game changes have been merged into the selected default branch.
+2. Select the repository's default branch.
 3. Click the green **Code** button, then **Download ZIP**.
 4. Extract the ZIP into a folder on your computer. Do not work inside the ZIP archive.
+5. Continue to step 3 to open the extracted project in VS Code.
 
-If you already have a local copy, update it with the latest merged files instead.
+If you already have a local copy, update it with the latest merged files instead. Preserve any local edits before replacing files or updating your checkout.
 
 ### 3. Open the project folder in VS Code
 
 1. Start VS Code.
 2. Choose **File > Open Folder…**.
-3. Select the extracted folder that directly contains `index.html`. Depending on the downloaded branch, this folder may be named `Arkanoid-main` or similar.
+3. Select the folder that directly contains `index.html`: `Arkanoid` if you cloned it, or the extracted ZIP folder (which may be named `Arkanoid-main` or similar).
 4. Click **Select Folder** or **Open**.
 
 The VS Code Explorer should show this structure:
