@@ -20,3 +20,14 @@ Files in the approved proposal:
 - src/levels.js
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-7 -->
+### Merged change: Add Arkanoid physics and gameplay engine
+
+Merged pull request #7: https://github.com/MarcoLFrancisco/Arkanoid/pull/7
+
+Files in the approved proposal:
+- src/game.js
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
