@@ -57,7 +57,7 @@ try {
     text('level-value', String(s.levelIndex + 1).padStart(2, '0'));
     text('lives-value', s.lives);
     pause.disabled = !['ready', 'playing', 'paused'].includes(s.status);
-    pause.textContent = paused ? 'Resume' : 'Pause';
+    text('pause-button', paused ? 'Resume' : 'Pause');
     pause.setAttribute('aria-pressed', String(paused));
     launch.disabled = s.status !== 'ready';
     start.disabled = false;
