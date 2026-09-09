@@ -129,7 +129,7 @@ There is no automated test suite, test command, package manifest, or build confi
 After following the local VS Code setup above, perform these manual browser checks:
 
 1. **Startup:** The start button becomes enabled, and browser developer tools show no failed source requests or uncaught errors.
-2. **Controls:** Start and launch the ball. Test keyboard and mouse movement; the paddle should stay inside the field.
+2. **Controls:** Start and launch the ball. Test keyboard and mouse movement; the paddle should stay inside the field. While holding a movement key, move the mouse to the opposite side of the playfield, then release the key without moving the mouse again. The paddle should stop rather than chase the ignored pointer position. Move the mouse again to regain pointer control. Keyboard movement takes priority while movement keys are held.
 3. **Collisions:** The ball should bounce off the paddle, bricks, and top/side walls. Bricks should take damage and the score should increase.
 4. **Lives:** Missing the ball should reduce lives. Losing all lives should display Game over; Play again should reset gameplay.
 5. **Progression:** Clearing a formation should advance to the next level. Clearing all five should show the victory screen.

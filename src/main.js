@@ -147,7 +147,8 @@ try {
   window.addEventListener('keyup', event => keys.delete(event.code));
 
   function setPointer(event) {
-    if (!event.isPrimary) return;
+    if (failed || !event.isPrimary || keys.size > 0) return;
+    if (!['ready', 'playing'].includes(game.state.status)) return;
     const rect = canvas.getBoundingClientRect();
     if (rect.width > 0) {
       pointerX = Math.max(0, Math.min(FIELD.width, (event.clientX - rect.left) * FIELD.width / rect.width));
