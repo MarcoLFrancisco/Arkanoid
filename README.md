@@ -222,3 +222,15 @@ Files in the approved proposal:
 - README.md
 
 Bumblebee has not run automated tests or verified runtime behavior for this change.
+
+
+<!-- bumblebee-pr-16 -->
+### Merged change: Prevent stale pointer targets from taking over keyboard movement
+
+Merged pull request #16: https://github.com/MarcoLFrancisco/Arkanoid/pull/16
+
+Files in the approved proposal:
+- src/main.js
+- README.md
+
+Bumblebee has not run automated tests or verified runtime behavior for this change.
